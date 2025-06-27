@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{direction:rtl;font-family:system-ui,sans-serif}
+::-webkit-scrollbar{height:6px}
+::-webkit-scrollbar-thumb{background:#0a3768;border-radius:3px}
