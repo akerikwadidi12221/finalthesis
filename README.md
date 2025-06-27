@@ -99,13 +99,14 @@ This will ensure the following categories exist:
 
 ## Importing Products from JSON
 
-Sample product data can be stored in `database/space/got.json`. After
-creating your categories run the following command to load these products
-into the database:
+Sample product data is provided in `database/space/sample_products.json`. After
+creating your categories run the following command to load these products into
+the database:
 
 ```bash
 python buildmart-online/backend/manage.py import_products_json
 ```
 
-The command accepts an optional path to the JSON file and a category ID to
-assign the imported products.
+The command accepts an optional path to the JSON file and a `--category` option
+to assign all imported products to a single category. Without this option each
+item's `category` field will be used (and categories are created if needed).
