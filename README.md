@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# finalthesis
-=======
 # BuildMart Online
 
 BuildMart Online is a full-stack e-commerce platform powered by Django and React.
@@ -37,7 +34,9 @@ BuildMart Online is a full-stack e-commerce platform powered by Django and React
    docker-compose up --build
    ```
 
-For more details see the `docs/` directory.
+For more details see the `docs/` directory. The file `docs/SITE_MAP_FA.md`
+حاوی توضیحات کامل مسیرهای وبسایت است. نمونه داده‌های اولیه نیز در
+`database/space/sample_products.json` قرار دارند.
 
 ## API Endpoints
 
@@ -110,5 +109,3 @@ python buildmart-online/backend/manage.py import_products_json
 
 The command accepts an optional path to the JSON file and a category ID to
 assign the imported products.
-
->>>>>>> 07df867 (Initial commit)
