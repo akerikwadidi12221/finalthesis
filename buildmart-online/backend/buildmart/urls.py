@@ -9,6 +9,7 @@ print("### buildmart.urls IMPORTED. urlpatterns =", file=sys.stderr)
 pprint.pprint([], stream=sys.stderr)  # جا برای بعد
 
 urlpatterns = [
+    path("",         index, name="index"),
     path("api/",      include("catalog.urls")),
     path("admin/",    admin.site.urls),
     path("api/catalog/", include("catalog.urls")),  # API
