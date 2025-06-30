@@ -1,4 +1,5 @@
 from pathlib import Path
+import os
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
@@ -81,5 +82,5 @@ STATIC_ROOT = BASE_DIR / 'static'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'users.User'
 
-MEDIA_ROOT = Path(r"C:\Users\Hadi\Desktop\New Desktop\sasi\database\images").resolve()
 MEDIA_URL = "/media/"
+MEDIA_ROOT = os.path.join(BASE_DIR.parent.parent, 'database', 'images')
