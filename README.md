@@ -56,6 +56,7 @@ The Django admin panel is configured with several advanced options:
 - Category management uses **django-mptt** for a tree view with drag & drop
 - Products include inline editing for images, variants and specifications
 - Orders show order items inline and include an action to mark them as sent
+- Every request is recorded by `UserActivityMiddleware` for basic analytics
 
 ## Adding a Django App
 Create a new folder under `buildmart-online/backend/` and add it to `INSTALLED_APPS` in `buildmart/settings/base.py`.
